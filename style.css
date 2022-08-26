@@ -1,0 +1,132 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1536329639134-ade172b2fea0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2940&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color:rgba(94, 97, 93, 0.9);
+  }
+  
+  #container {
+      background-color:rgba(36, 39, 36, 0.61);
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 450px;
+      height: 625px;
+      border-radius: 40px;
+      color: white;
+      margin-top: 30px;
+      margin-left: 20px;
+      }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Nunito', sans-serif;
+      margin: 20px;
+      padding: 20px;
+      margin-top: -20px;
+      color: #FDFCE5;
+  }
+  
+  h1 {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(80, 173, 72);
+    align-self: center;
+  }
+  
+  input, select {
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  select {
+    background-color: rgba(36, 39, 36, 0.61);
+    color: rgb(132, 209, 139);
+  }
+  
+  #addTip {
+      background-color:#FFEBA1;
+      border: none;
+      border-radius: 10px;
+      padding: 5px;
+      font-family: 'Nunito', sans-serif;
+      color: rgb(24, 75, 28);
+  }
+  
+  #btn {
+    background-color: #FC5404;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: 'Nunito', sans-serif;
+    color: #FFF5AB;
+  }
+  
+  #tip {
+    font-family: 'Nunito', sans-serif;
+    display: none;
+  }
+  
+  #showTotalAmountToPay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #billSplit, #totalTip, #totalAmount {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgba(147, 198, 142, 0.9);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(67, 145, 71);
+  }
+
+  #dividedBill, #dividedTip, #billAndTip, #usd {
+    color: rgb(42, 110, 46);
+  }
+
+  #bill, #people {
+    color: rgb(42, 110, 46);
+  }
+
+@media all and (max-width: 500px){
+  body {
+    background-position: unset;
+  }
+  
+  #container {
+    width: 350px;
+    height: 780px;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  form {
+    margin-top: -70px;
+    font-size: 20px;
+  }
+
+  #bill, #people, #addTip, #btn, select, #billSplit, #totalTip  {
+    font-size: 17px;
+  }
+
+  #billSplit, #totalTip, #totalAmount {
+    width: 110px;
+  }
+
+  #totalAmount {
+    font-size: 20px;
+  }
+}
